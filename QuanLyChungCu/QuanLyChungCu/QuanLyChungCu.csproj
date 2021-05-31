@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70186405-46F2-4D1D-A150-A128623C641D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyChungCu</RootNamespace>
+    <AssemblyName>QuanLyChungCu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\CanhoBLL.cs" />
+    <Compile Include="BLL\CanhoInfoBLL.cs" />
+    <Compile Include="BLL\ChitietcanhoBLL.cs" />
+    <Compile Include="BLL\ChucvuBLL.cs" />
+    <Compile Include="BLL\DichvuBLL.cs" />
+    <Compile Include="BLL\HoadonBLL.cs" />
+    <Compile Include="BLL\HogiadinhBLL.cs" />
+    <Compile Include="BLL\HopdongBLL.cs" />
+    <Compile Include="BLL\KhuBLL.cs" />
+    <Compile Include="BLL\NhanvienBLL.cs" />
+    <Compile Include="BLL\TaikhoanBLL.cs" />
+    <Compile Include="canho.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="chitietcanho.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="chitiethoadon.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="chucvu.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSDL.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSDL.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSDL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSDL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSDL.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CBBHogiadinh.cs" />
+    <Compile Include="DAL\CBBChucvu.cs" />
+    <Compile Include="DAL\CBBHopdong.cs" />
+    <Compile Include="DAL\CBBKhu.cs" />
+    <Compile Include="DAL\CBBNhanvien.cs" />
+    <Compile Include="dichvu.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CanhoInfo.cs" />
+    <Compile Include="hoadondichvu.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hogiadinh.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hopdong.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="khu.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nhanvien.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="taikhoan.cs">
+      <DependentUpon>CSDL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View\Canho\Form_Canho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Canho\Form_Canho.Designer.cs">
+      <DependentUpon>Form_Canho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ChiTietHoaDonDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ChiTietHoaDonDV.Designer.cs">
+      <DependentUpon>Form_ChiTietHoaDonDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ChonSoLuongDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ChonSoLuongDV.Designer.cs">
+      <DependentUpon>Form_ChonSoLuongDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ThongTinDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ThongTinDichVu.Designer.cs">
+      <DependentUpon>Form_ThongTinDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Hopdong\Form_ChitietHopdong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Hopdong\Form_ChitietHopdong.Designer.cs">
+      <DependentUpon>Form_ChitietHopdong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Chothue\Form_ChoThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Chothue\Form_ChoThue.Designer.cs">
+      <DependentUpon>Form_ChoThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Giaodienchinh\Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Giaodienchinh\Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Nhanvien\Form_Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Nhanvien\Form_Nhanvien.Designer.cs">
+      <DependentUpon>Form_Nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Giaodienchinh\Form_QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Giaodienchinh\Form_QuanLy.Designer.cs">
+      <DependentUpon>Form_QuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_Dichvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_Dichvu.Designer.cs">
+      <DependentUpon>Form_Dichvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Hopdong\Form_Hopdong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Hopdong\Form_Hopdong.Designer.cs">
+      <DependentUpon>Form_Hopdong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_QuanLyDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_QuanLyDichVu.Designer.cs">
+      <DependentUpon>Form_QuanLyDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ThemHoaDonDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ThemHoaDonDV.Designer.cs">
+      <DependentUpon>Form_ThemHoaDonDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ThemDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dichvu\Form_ThemDichVu.Designer.cs">
+      <DependentUpon>Form_ThemDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Thongtintaikhoan\Form_Thongtin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Thongtintaikhoan\Form_Thongtin.Designer.cs">
+      <DependentUpon>Form_Thongtin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\Dichvu\Form_ThemHoaDonDV.resx">
+      <DependentUpon>Form_ThemHoaDonDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Canho\Form_Canho.resx">
+      <DependentUpon>Form_Canho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dichvu\Form_ChonSoLuongDV.resx">
+      <DependentUpon>Form_ChonSoLuongDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Chothue\Form_ChoThue.resx">
+      <DependentUpon>Form_ChoThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Giaodienchinh\Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Hopdong\Form_ChitietHopdong.resx">
+      <DependentUpon>Form_ChitietHopdong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Nhanvien\Form_Nhanvien.resx">
+      <DependentUpon>Form_Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Giaodienchinh\Form_QuanLy.resx">
+      <DependentUpon>Form_QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dichvu\Form_Dichvu.resx">
+      <DependentUpon>Form_Dichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Hopdong\Form_Hopdong.resx">
+      <DependentUpon>Form_Hopdong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dichvu\Form_QuanLyDichVu.resx">
+      <DependentUpon>Form_QuanLyDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dichvu\Form_ThemDichVu.resx">
+      <DependentUpon>Form_ThemDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Thongtintaikhoan\Form_Thongtin.resx">
+      <DependentUpon>Form_Thongtin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="CSDL.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CSDL.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="CSDL.edmx.diagram">
+      <DependentUpon>CSDL.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bjphibibpjz %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-identification-card1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2732x2732-plum-web-solid-color-background.jpg" />
+    <None Include="Resources\home-2855790.png" />
+    <None Include="Resources\home-2855790 %281%29.png" />
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-property-55.png" />
+    <None Include="Resources\pngtree-pastel-background-for-banner-image_407969.jpg" />
+    <None Include="Resources\icons8-checked-50.png" />
+    <None Include="Resources\icons8-cancel-48.png" />
+    <None Include="Resources\icons8-checked-checkbox-48.png" />
+    <None Include="Resources\rm218batch9-aum-50.jpg" />
+    <None Include="Resources\78d27defaed1369f866e7e21feadcbd9.png" />
+    <None Include="Resources\icons8-save-64 %281%29.png" />
+    <None Include="Resources\depositphotos_29522159-stock-photo-abstract-pastel-pink-and-white1.jpg" />
+    <None Include="Resources\icons8-search-64 %282%29.png" />
+    <None Include="Resources\icons8-add-dollar-55.png" />
+    <None Include="Resources\icons8-customer-insight-100.png" />
+    <None Include="Resources\icons8-eye-50.png" />
+    <None Include="Resources\building41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSDL.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CSDL.edmx</DependentUpon>
+      <LastGenOutput>CSDL.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CSDL.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CSDL.edmx</DependentUpon>
+      <LastGenOutput>CSDL.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\diagram.png" />
+    <None Include="Resources\criminal-carrying-money-bag-at-his-back.png" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\agreement.png" />
+    <None Include="Resources\icons8-refresh-40.png" />
+    <None Include="Resources\staff-icon-78.png" />
+    <None Include="Resources\icons8-billboard-100.png" />
+    <None Include="Resources\icons8-clouds-80.png" />
+    <None Include="Resources\icons8-onedrive-96.png" />
+    <None Include="Resources\icons8-sun-behind-small-cloud-96 .png" />
+    <None Include="Resources\icons8-building-100 %281%29.png" />
+    <None Include="Resources\Annotation 2021-05-25 175309 %281%29.png" />
+    <None Include="Resources\reset_32x32.png" />
+    <None Include="Resources\usergroup_32x32.png" />
+    <None Include="Resources\finduser.png" />
+    <None Include="Resources\edituser.png" />
+    <None Include="Resources\removepivotfield_32x32.png" />
+    <None Include="Resources\adduser.png" />
+    <None Include="Resources\635-6358354_city-building-vector-png-city-vector-in-png2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
