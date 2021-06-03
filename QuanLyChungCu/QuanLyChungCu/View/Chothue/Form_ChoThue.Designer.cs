@@ -85,6 +85,7 @@ namespace QuanLyChungCu.View
             // 
             // pnl_canho
             // 
+            this.pnl_canho.BackColor = System.Drawing.Color.MistyRose;
             this.pnl_canho.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_canho.Location = new System.Drawing.Point(0, 0);
             this.pnl_canho.Name = "pnl_canho";
@@ -93,6 +94,7 @@ namespace QuanLyChungCu.View
             // 
             // lb_trong
             // 
+            this.lb_trong.BackColor = System.Drawing.Color.MistyRose;
             this.lb_trong.Dock = System.Windows.Forms.DockStyle.Top;
             this.lb_trong.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_trong.ForeColor = System.Drawing.Color.Purple;
@@ -105,6 +107,7 @@ namespace QuanLyChungCu.View
             // 
             // pnl_thongtin
             // 
+            this.pnl_thongtin.BackColor = System.Drawing.Color.MistyRose;
             this.pnl_thongtin.Controls.Add(this.grb_thongtin);
             this.pnl_thongtin.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_thongtin.Location = new System.Drawing.Point(664, 104);
@@ -114,6 +117,7 @@ namespace QuanLyChungCu.View
             // 
             // grb_thongtin
             // 
+            this.grb_thongtin.BackColor = System.Drawing.Color.MistyRose;
             this.grb_thongtin.Controls.Add(this.lb_infothoigian);
             this.grb_thongtin.Controls.Add(this.lb_infonguoithue);
             this.grb_thongtin.Controls.Add(this.lb_infotrangthai);
@@ -249,6 +253,7 @@ namespace QuanLyChungCu.View
             // 
             // pnl_chothue
             // 
+            this.pnl_chothue.BackColor = System.Drawing.Color.MistyRose;
             this.pnl_chothue.Controls.Add(this.grb_chothue);
             this.pnl_chothue.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnl_chothue.Location = new System.Drawing.Point(664, 529);
@@ -274,6 +279,7 @@ namespace QuanLyChungCu.View
             // 
             // btn_tieptheo
             // 
+            this.btn_tieptheo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_tieptheo.Enabled = false;
             this.btn_tieptheo.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_tieptheo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -290,6 +296,7 @@ namespace QuanLyChungCu.View
             // 
             // btn_huy
             // 
+            this.btn_huy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_huy.Enabled = false;
             this.btn_huy.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_huy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -306,8 +313,9 @@ namespace QuanLyChungCu.View
             // 
             // cb_nguoidoi
             // 
-            this.cb_nguoidoi.BackColor = System.Drawing.Color.Plum;
+            this.cb_nguoidoi.BackColor = System.Drawing.Color.MistyRose;
             this.cb_nguoidoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_nguoidoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cb_nguoidoi.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_nguoidoi.ForeColor = System.Drawing.Color.Purple;
             this.cb_nguoidoi.FormattingEnabled = true;
@@ -328,6 +336,7 @@ namespace QuanLyChungCu.View
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.MistyRose;
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(664, 362);
@@ -349,7 +358,7 @@ namespace QuanLyChungCu.View
             // 
             // lv_vatdung
             // 
-            this.lv_vatdung.BackColor = System.Drawing.Color.Plum;
+            this.lv_vatdung.BackColor = System.Drawing.Color.MistyRose;
             this.lv_vatdung.BackgroundImageTiled = true;
             this.lv_vatdung.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lv_vatdung.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -373,6 +382,8 @@ namespace QuanLyChungCu.View
             // btn_refresh
             // 
             this.btn_refresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_refresh.BackColor = System.Drawing.Color.MistyRose;
+            this.btn_refresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_refresh.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_refresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_refresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -384,7 +395,7 @@ namespace QuanLyChungCu.View
             this.btn_refresh.Name = "btn_refresh";
             this.btn_refresh.Size = new System.Drawing.Size(79, 74);
             this.btn_refresh.TabIndex = 4;
-            this.btn_refresh.UseVisualStyleBackColor = true;
+            this.btn_refresh.UseVisualStyleBackColor = false;
             this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
             // Form_ChoThue

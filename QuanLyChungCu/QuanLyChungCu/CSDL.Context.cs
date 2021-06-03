@@ -27,6 +27,7 @@ namespace QuanLyChungCu
     
         public virtual DbSet<canho> canhoes { get; set; }
         public virtual DbSet<chitietcanho> chitietcanhoes { get; set; }
+        public virtual DbSet<chitiethoadon> chitiethoadons { get; set; }
         public virtual DbSet<chucvu> chucvus { get; set; }
         public virtual DbSet<dichvu> dichvus { get; set; }
         public virtual DbSet<hoadondichvu> hoadondichvus { get; set; }
@@ -35,6 +36,5 @@ namespace QuanLyChungCu
         public virtual DbSet<khu> khus { get; set; }
         public virtual DbSet<nhanvien> nhanviens { get; set; }
         public virtual DbSet<taikhoan> taikhoans { get; set; }
-        public virtual DbSet<chitiethoadon> chitiethoadons { get; set; }
     }
 }

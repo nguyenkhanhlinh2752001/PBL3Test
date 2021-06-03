@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ThongTinDichVu));
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -40,6 +39,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +61,10 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.LavenderBlush;
+            this.groupBox2.BackColor = System.Drawing.Color.MistyRose;
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.txtGia);
             this.groupBox2.Controls.Add(this.btnLuu);
@@ -77,13 +82,16 @@
             this.groupBox2.Size = new System.Drawing.Size(559, 414);
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.Color.Transparent;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.Indigo;
+            this.btnXoa.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.Purple;
+            this.btnXoa.Image = global::QuanLyChungCu.Properties.Resources.icons8_cancel_48;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(281, 287);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
@@ -97,19 +105,23 @@
             // 
             // txtGia
             // 
-            this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(244, 184);
+            this.txtGia.BackColor = System.Drawing.Color.MistyRose;
+            this.txtGia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtGia.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGia.Location = new System.Drawing.Point(244, 197);
             this.txtGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(236, 34);
+            this.txtGia.Size = new System.Drawing.Size(236, 38);
             this.txtGia.TabIndex = 24;
             // 
             // btnLuu
             // 
             this.btnLuu.BackColor = System.Drawing.Color.Transparent;
+            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.Indigo;
+            this.btnLuu.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.Purple;
+            this.btnLuu.Image = global::QuanLyChungCu.Properties.Resources.icons8_checked_50;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Location = new System.Drawing.Point(47, 287);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
@@ -123,61 +135,66 @@
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Indigo;
-            this.label3.Location = new System.Drawing.Point(56, 186);
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Purple;
+            this.label3.Location = new System.Drawing.Point(8, 184);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 28);
+            this.label3.Size = new System.Drawing.Size(209, 47);
             this.label3.TabIndex = 25;
             this.label3.Text = "Giá";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtMaDV
             // 
+            this.txtMaDV.BackColor = System.Drawing.Color.MistyRose;
+            this.txtMaDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMaDV.Enabled = false;
-            this.txtMaDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaDV.Location = new System.Drawing.Point(244, 70);
+            this.txtMaDV.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaDV.Location = new System.Drawing.Point(244, 51);
             this.txtMaDV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDV.Name = "txtMaDV";
-            this.txtMaDV.Size = new System.Drawing.Size(236, 34);
+            this.txtMaDV.Size = new System.Drawing.Size(236, 38);
             this.txtMaDV.TabIndex = 0;
             // 
             // txtTenDV
             // 
-            this.txtTenDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDV.Location = new System.Drawing.Point(244, 132);
+            this.txtTenDV.BackColor = System.Drawing.Color.MistyRose;
+            this.txtTenDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTenDV.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDV.Location = new System.Drawing.Point(244, 121);
             this.txtTenDV.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDV.Name = "txtTenDV";
-            this.txtTenDV.Size = new System.Drawing.Size(236, 34);
+            this.txtTenDV.Size = new System.Drawing.Size(236, 38);
             this.txtTenDV.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Indigo;
-            this.label1.Location = new System.Drawing.Point(56, 70);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Purple;
+            this.label1.Location = new System.Drawing.Point(9, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 28);
+            this.label1.Size = new System.Drawing.Size(209, 44);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Dịch Vụ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Indigo;
-            this.label2.Location = new System.Drawing.Point(56, 134);
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Purple;
+            this.label2.Location = new System.Drawing.Point(9, 121);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 28);
+            this.label2.Size = new System.Drawing.Size(209, 52);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên Dịch Vụ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::QuanLyChungCu.Properties.Resources.building41;
             this.pictureBox1.Location = new System.Drawing.Point(1, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -185,6 +202,30 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Purple;
+            this.label4.Location = new System.Drawing.Point(224, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(250, 1);
+            this.label4.TabIndex = 47;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Purple;
+            this.label6.Location = new System.Drawing.Point(230, 241);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(250, 1);
+            this.label6.TabIndex = 48;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Purple;
+            this.label7.Location = new System.Drawing.Point(224, 165);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(250, 1);
+            this.label7.TabIndex = 49;
             // 
             // Form_ThongTinDichVu
             // 
@@ -220,5 +261,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
     }
 }

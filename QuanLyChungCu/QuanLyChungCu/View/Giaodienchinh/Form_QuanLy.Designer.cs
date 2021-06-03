@@ -83,6 +83,7 @@
             // 
             // btn_Thongtin
             // 
+            this.btn_Thongtin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Thongtin.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Thongtin.FlatAppearance.BorderSize = 0;
             this.btn_Thongtin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -103,6 +104,7 @@
             // 
             // btn_Canho
             // 
+            this.btn_Canho.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Canho.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Canho.FlatAppearance.BorderSize = 0;
             this.btn_Canho.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -123,6 +125,7 @@
             // 
             // btn_Nhanvien
             // 
+            this.btn_Nhanvien.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Nhanvien.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Nhanvien.FlatAppearance.BorderSize = 0;
             this.btn_Nhanvien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -143,6 +146,7 @@
             // 
             // btn_Hopdong
             // 
+            this.btn_Hopdong.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Hopdong.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Hopdong.FlatAppearance.BorderSize = 0;
             this.btn_Hopdong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -163,6 +167,7 @@
             // 
             // btn_Dichvu
             // 
+            this.btn_Dichvu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Dichvu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Dichvu.FlatAppearance.BorderSize = 0;
             this.btn_Dichvu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -183,6 +188,7 @@
             // 
             // btn_ChoThue
             // 
+            this.btn_ChoThue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_ChoThue.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_ChoThue.FlatAppearance.BorderSize = 0;
             this.btn_ChoThue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -215,6 +221,7 @@
             // 
             // btn_menu
             // 
+            this.btn_menu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_menu.FlatAppearance.BorderSize = 0;
             this.btn_menu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_menu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -231,6 +238,7 @@
             // 
             // btn_help
             // 
+            this.btn_help.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_help.FlatAppearance.BorderSize = 0;
             this.btn_help.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_help.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -259,6 +267,7 @@
             // btn_Close
             // 
             this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Close.FlatAppearance.BorderSize = 0;
             this.btn_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -275,6 +284,7 @@
             // btn_hide
             // 
             this.btn_hide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_hide.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_hide.FlatAppearance.BorderSize = 0;
             this.btn_hide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_hide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -292,6 +302,7 @@
             // btn_info
             // 
             this.btn_info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_info.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_info.FlatAppearance.BorderSize = 0;
             this.btn_info.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_info.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;

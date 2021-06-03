@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.grbDanhSach = new System.Windows.Forms.GroupBox();
@@ -110,7 +110,7 @@
             // 
             // grbDanhSach
             // 
-            this.grbDanhSach.BackColor = System.Drawing.Color.Plum;
+            this.grbDanhSach.BackColor = System.Drawing.Color.MistyRose;
             this.grbDanhSach.Controls.Add(this.dgvDanhSachNhanVien);
             this.grbDanhSach.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbDanhSach.ForeColor = System.Drawing.Color.Purple;
@@ -123,24 +123,24 @@
             // 
             // dgvDanhSachNhanVien
             // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Purple;
-            this.dgvDanhSachNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Purple;
+            this.dgvDanhSachNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDanhSachNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvDanhSachNhanVien.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dgvDanhSachNhanVien.BackgroundColor = System.Drawing.Color.Plum;
+            this.dgvDanhSachNhanVien.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dgvDanhSachNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDanhSachNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Plum;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDanhSachNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDanhSachNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDanhSachNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.manhanvien,
@@ -152,36 +152,36 @@
             this.machucvu,
             this.tendangnhap,
             this.matkhau});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDanhSachNhanVien.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDanhSachNhanVien.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDanhSachNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDanhSachNhanVien.EnableHeadersVisualStyles = false;
-            this.dgvDanhSachNhanVien.GridColor = System.Drawing.Color.White;
+            this.dgvDanhSachNhanVien.GridColor = System.Drawing.Color.Purple;
             this.dgvDanhSachNhanVien.Location = new System.Drawing.Point(3, 31);
             this.dgvDanhSachNhanVien.Name = "dgvDanhSachNhanVien";
             this.dgvDanhSachNhanVien.ReadOnly = true;
             this.dgvDanhSachNhanVien.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDanhSachNhanVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDanhSachNhanVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvDanhSachNhanVien.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Purple;
-            this.dgvDanhSachNhanVien.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Purple;
+            this.dgvDanhSachNhanVien.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvDanhSachNhanVien.RowTemplate.Height = 24;
             this.dgvDanhSachNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDanhSachNhanVien.Size = new System.Drawing.Size(1460, 310);
@@ -272,7 +272,7 @@
             // grbThongTin
             // 
             this.grbThongTin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.grbThongTin.BackColor = System.Drawing.Color.Plum;
+            this.grbThongTin.BackColor = System.Drawing.Color.MistyRose;
             this.grbThongTin.Controls.Add(this.label16);
             this.grbThongTin.Controls.Add(this.label15);
             this.grbThongTin.Controls.Add(this.label14);
@@ -333,7 +333,7 @@
             // 
             // txtSoDienThoai
             // 
-            this.txtSoDienThoai.BackColor = System.Drawing.Color.Plum;
+            this.txtSoDienThoai.BackColor = System.Drawing.Color.MistyRose;
             this.txtSoDienThoai.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSoDienThoai.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoDienThoai.ForeColor = System.Drawing.Color.Purple;
@@ -382,7 +382,7 @@
             // 
             // txtSoCMND
             // 
-            this.txtSoCMND.BackColor = System.Drawing.Color.Plum;
+            this.txtSoCMND.BackColor = System.Drawing.Color.MistyRose;
             this.txtSoCMND.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSoCMND.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoCMND.ForeColor = System.Drawing.Color.Purple;
@@ -395,7 +395,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.BackColor = System.Drawing.Color.Plum;
+            this.txtHoTen.BackColor = System.Drawing.Color.MistyRose;
             this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHoTen.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.ForeColor = System.Drawing.Color.Purple;
@@ -407,7 +407,7 @@
             // 
             // txtMaNhanVien
             // 
-            this.txtMaNhanVien.BackColor = System.Drawing.Color.Plum;
+            this.txtMaNhanVien.BackColor = System.Drawing.Color.MistyRose;
             this.txtMaNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMaNhanVien.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNhanVien.ForeColor = System.Drawing.Color.Purple;
@@ -488,12 +488,13 @@
             this.cbxChucvu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cbxChucvu.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbxChucvu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxChucvu.Font = new System.Drawing.Font("Comic Sans MS", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxChucvu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbxChucvu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxChucvu.ForeColor = System.Drawing.Color.Purple;
             this.cbxChucvu.FormattingEnabled = true;
             this.cbxChucvu.Location = new System.Drawing.Point(226, 192);
             this.cbxChucvu.Name = "cbxChucvu";
-            this.cbxChucvu.Size = new System.Drawing.Size(221, 38);
+            this.cbxChucvu.Size = new System.Drawing.Size(221, 37);
             this.cbxChucvu.TabIndex = 10;
             // 
             // label5
@@ -510,7 +511,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Plum;
+            this.label4.BackColor = System.Drawing.Color.MistyRose;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Purple;
             this.label4.Location = new System.Drawing.Point(653, 867);
@@ -521,7 +522,7 @@
             // 
             // txbSearch
             // 
-            this.txbSearch.BackColor = System.Drawing.Color.Plum;
+            this.txbSearch.BackColor = System.Drawing.Color.MistyRose;
             this.txbSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSearch.ForeColor = System.Drawing.Color.Purple;
@@ -533,7 +534,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Plum;
+            this.groupBox1.BackColor = System.Drawing.Color.MistyRose;
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.txtMatKhau);
@@ -569,7 +570,7 @@
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.BackColor = System.Drawing.Color.Plum;
+            this.txtMatKhau.BackColor = System.Drawing.Color.MistyRose;
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMatKhau.Font = new System.Drawing.Font("Comic Sans MS", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.ForeColor = System.Drawing.Color.Purple;
@@ -581,7 +582,7 @@
             // 
             // txtTenDangNhap
             // 
-            this.txtTenDangNhap.BackColor = System.Drawing.Color.Plum;
+            this.txtTenDangNhap.BackColor = System.Drawing.Color.MistyRose;
             this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTenDangNhap.Font = new System.Drawing.Font("Comic Sans MS", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDangNhap.ForeColor = System.Drawing.Color.Purple;
@@ -614,7 +615,8 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.BackColor = System.Drawing.Color.Plum;
+            this.btnHuy.BackColor = System.Drawing.Color.Transparent;
+            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuy.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btnHuy.FlatAppearance.CheckedBackColor = System.Drawing.Color.Fuchsia;
             this.btnHuy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -635,7 +637,8 @@
             // 
             // btnHienThi
             // 
-            this.btnHienThi.BackColor = System.Drawing.Color.Plum;
+            this.btnHienThi.BackColor = System.Drawing.Color.Transparent;
+            this.btnHienThi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHienThi.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btnHienThi.FlatAppearance.CheckedBackColor = System.Drawing.Color.Fuchsia;
             this.btnHienThi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -655,7 +658,8 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.Plum;
+            this.btnTimKiem.BackColor = System.Drawing.Color.Transparent;
+            this.btnTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTimKiem.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btnTimKiem.FlatAppearance.CheckedBackColor = System.Drawing.Color.Fuchsia;
             this.btnTimKiem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -675,7 +679,8 @@
             // 
             // btnSua
             // 
-            this.btnSua.BackColor = System.Drawing.Color.Plum;
+            this.btnSua.BackColor = System.Drawing.Color.Transparent;
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btnSua.FlatAppearance.CheckedBackColor = System.Drawing.Color.Fuchsia;
             this.btnSua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -695,7 +700,8 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.Plum;
+            this.btnXoa.BackColor = System.Drawing.Color.Transparent;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btnXoa.FlatAppearance.CheckedBackColor = System.Drawing.Color.Fuchsia;
             this.btnXoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -715,7 +721,8 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.Plum;
+            this.btnThem.BackColor = System.Drawing.Color.Transparent;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btnThem.FlatAppearance.CheckedBackColor = System.Drawing.Color.Fuchsia;
             this.btnThem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
@@ -755,7 +762,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Plum;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1542, 952);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label19);

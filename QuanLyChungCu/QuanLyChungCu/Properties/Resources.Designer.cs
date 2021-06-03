@@ -273,6 +273,16 @@ namespace QuanLyChungCu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bill_55 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bill-55", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_billboard_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-billboard-100", resourceCulture);
@@ -393,9 +403,41 @@ namespace QuanLyChungCu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_service_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-service-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_sun_behind_small_cloud_96_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-sun-behind-small-cloud-96 ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_technical_support_customer_service_livechat_clip_a_support_team_5b50b2e926a7c9_6166738415320153371583 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-technical-support-customer-service-livechat-clip-a-support-team-5b50b2e92" +
+                        "6a7c9.6166738415320153371583", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_technical_support_customer_service_livechat_clip_a_support_team_5b50b2e926a7c91 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-technical-support-customer-service-livechat-clip-a-support-team-5b50b2e92" +
+                        "6a7c91", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -516,6 +558,16 @@ namespace QuanLyChungCu.Properties {
         internal static System.Drawing.Bitmap usergroup_32x32 {
             get {
                 object obj = ResourceManager.GetObject("usergroup_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Why_to_Choose_Online_Service_Desk_Software_FB_Image {
+            get {
+                object obj = ResourceManager.GetObject("Why-to-Choose-Online-Service-Desk-Software-FB-Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

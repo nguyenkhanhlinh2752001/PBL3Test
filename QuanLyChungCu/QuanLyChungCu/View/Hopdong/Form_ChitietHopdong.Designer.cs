@@ -142,7 +142,7 @@
             // 
             // txtMaHD
             // 
-            this.txtMaHD.BackColor = System.Drawing.Color.Plum;
+            this.txtMaHD.BackColor = System.Drawing.Color.MistyRose;
             this.txtMaHD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMaHD.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaHD.ForeColor = System.Drawing.Color.Purple;
@@ -154,7 +154,7 @@
             // 
             // txtTenHD
             // 
-            this.txtTenHD.BackColor = System.Drawing.Color.Plum;
+            this.txtTenHD.BackColor = System.Drawing.Color.MistyRose;
             this.txtTenHD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTenHD.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenHD.ForeColor = System.Drawing.Color.Purple;
@@ -166,7 +166,7 @@
             // 
             // txtGiaTien
             // 
-            this.txtGiaTien.BackColor = System.Drawing.Color.Plum;
+            this.txtGiaTien.BackColor = System.Drawing.Color.MistyRose;
             this.txtGiaTien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGiaTien.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaTien.ForeColor = System.Drawing.Color.Purple;
@@ -178,7 +178,7 @@
             // 
             // txtThoiHan
             // 
-            this.txtThoiHan.BackColor = System.Drawing.Color.Plum;
+            this.txtThoiHan.BackColor = System.Drawing.Color.MistyRose;
             this.txtThoiHan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtThoiHan.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThoiHan.ForeColor = System.Drawing.Color.Purple;
@@ -190,33 +190,41 @@
             // 
             // btOk
             // 
+            this.btOk.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btOk.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btOk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
             this.btOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btOk.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOk.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOk.Image = global::QuanLyChungCu.Properties.Resources.icons8_checked_50;
+            this.btOk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btOk.Location = new System.Drawing.Point(265, 432);
             this.btOk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btOk.Name = "btOk";
-            this.btOk.Size = new System.Drawing.Size(114, 57);
+            this.btOk.Size = new System.Drawing.Size(173, 57);
             this.btOk.TabIndex = 4;
             this.btOk.Text = "Ok";
+            this.btOk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btOk.UseVisualStyleBackColor = true;
             this.btOk.Click += new System.EventHandler(this.btOk_Click);
             // 
             // btEixt
             // 
+            this.btEixt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btEixt.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btEixt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btEixt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
             this.btEixt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEixt.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEixt.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEixt.Image = global::QuanLyChungCu.Properties.Resources.icons8_cancel_48;
+            this.btEixt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btEixt.Location = new System.Drawing.Point(643, 432);
             this.btEixt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btEixt.Name = "btEixt";
-            this.btEixt.Size = new System.Drawing.Size(114, 57);
+            this.btEixt.Size = new System.Drawing.Size(173, 57);
             this.btEixt.TabIndex = 4;
             this.btEixt.Text = "Exit";
+            this.btEixt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btEixt.UseVisualStyleBackColor = true;
             this.btEixt.Click += new System.EventHandler(this.btEixt_Click);
             // 
@@ -228,40 +236,43 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(726, 307);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(183, 40);
+            this.dateTimePicker1.Size = new System.Drawing.Size(238, 40);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // cbbMaNHv
             // 
-            this.cbbMaNHv.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbMaNHv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbMaNHv.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbMaNHv.ForeColor = System.Drawing.Color.Purple;
             this.cbbMaNHv.FormattingEnabled = true;
             this.cbbMaNHv.Location = new System.Drawing.Point(209, 144);
             this.cbbMaNHv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMaNHv.Name = "cbbMaNHv";
-            this.cbbMaNHv.Size = new System.Drawing.Size(238, 39);
+            this.cbbMaNHv.Size = new System.Drawing.Size(238, 37);
             this.cbbMaNHv.TabIndex = 6;
             // 
             // cbbMaCanHo
             // 
-            this.cbbMaCanHo.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbMaCanHo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbMaCanHo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbMaCanHo.ForeColor = System.Drawing.Color.Purple;
             this.cbbMaCanHo.FormattingEnabled = true;
             this.cbbMaCanHo.Location = new System.Drawing.Point(209, 229);
             this.cbbMaCanHo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMaCanHo.Name = "cbbMaCanHo";
-            this.cbbMaCanHo.Size = new System.Drawing.Size(238, 39);
+            this.cbbMaCanHo.Size = new System.Drawing.Size(238, 37);
             this.cbbMaCanHo.TabIndex = 7;
             // 
             // cbbHogiadinh
             // 
-            this.cbbHogiadinh.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbHogiadinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbHogiadinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbHogiadinh.ForeColor = System.Drawing.Color.Purple;
             this.cbbHogiadinh.FormattingEnabled = true;
             this.cbbHogiadinh.Location = new System.Drawing.Point(209, 311);
             this.cbbHogiadinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbHogiadinh.Name = "cbbHogiadinh";
-            this.cbbHogiadinh.Size = new System.Drawing.Size(238, 39);
+            this.cbbHogiadinh.Size = new System.Drawing.Size(238, 37);
             this.cbbHogiadinh.TabIndex = 8;
             // 
             // label17
@@ -300,7 +311,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Plum;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1010, 560);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);

@@ -150,6 +150,7 @@
             // 
             // btn_login
             // 
+            this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.Purple;
             this.btn_login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;

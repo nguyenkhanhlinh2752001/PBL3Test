@@ -358,5 +358,7 @@ namespace QuanLyChungCu.View
             txt_suadongia.Text = dgV_vatdung.SelectedRows[0].Cells[4].Value.ToString();
             nUP_suasoluong.Value = Convert.ToInt32(dgV_vatdung.SelectedRows[0].Cells[3].Value);
         }
+
+        
     }
 }

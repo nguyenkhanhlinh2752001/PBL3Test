@@ -200,8 +200,9 @@ namespace QuanLyChungCu.View
             }
             else btn_ChoThue.PerformClick();
         }
+
         #endregion
 
-
+        
     }
 }

@@ -42,7 +42,7 @@ namespace QuanLyChungCu.View
                 k.Height = 160;
                 k.Controls.Add(flp);
                 flp.Dock = DockStyle.Fill;
-                flp.BackColor = Color.Plum;
+                flp.BackColor = Color.MistyRose;
                 int o = 1;
                 foreach (canho j in CanhoBLL.Instance.GetListCanhoByKhu(i.makhu))
                 {
@@ -54,7 +54,7 @@ namespace QuanLyChungCu.View
                     btn.FlatAppearance.BorderSize = 0;
                     btn.FlatAppearance.MouseDownBackColor = Color.Fuchsia;
                     btn.FlatAppearance.MouseOverBackColor = Color.Violet;
-                    btn.BackColor = Color.Plum;
+                    btn.BackColor = Color.MistyRose;
                     if(HopdongBLL.Instance.GetHopdongDavao(j.macanho) != null)
                     {
                         btn.Image = Properties.Resources.home_2855790__1_;

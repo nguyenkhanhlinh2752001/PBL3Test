@@ -29,14 +29,14 @@ namespace QuanLyChungCu.View
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pnl_canho = new System.Windows.Forms.Panel();
@@ -75,6 +75,7 @@ namespace QuanLyChungCu.View
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.nUP_suasoluong = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.txt_suadongia = new System.Windows.Forms.TextBox();
@@ -97,6 +98,7 @@ namespace QuanLyChungCu.View
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUP_themsoluong)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nUP_suasoluong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgV_vatdung)).BeginInit();
             this.SuspendLayout();
@@ -131,6 +133,7 @@ namespace QuanLyChungCu.View
             // 
             // grb_canho
             // 
+            this.grb_canho.BackColor = System.Drawing.Color.MistyRose;
             this.grb_canho.Controls.Add(this.panel1);
             this.grb_canho.Controls.Add(this.cb_khu);
             this.grb_canho.Controls.Add(this.label3);
@@ -190,7 +193,8 @@ namespace QuanLyChungCu.View
             // 
             // btn_sua
             // 
-            this.btn_sua.BackColor = System.Drawing.Color.Plum;
+            this.btn_sua.BackColor = System.Drawing.Color.MistyRose;
+            this.btn_sua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_sua.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_sua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_sua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -213,7 +217,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_sua
             // 
-            this.txt_sua.BackColor = System.Drawing.Color.Plum;
+            this.txt_sua.BackColor = System.Drawing.Color.MistyRose;
             this.txt_sua.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_sua.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_sua.ForeColor = System.Drawing.Color.Purple;
@@ -235,9 +239,11 @@ namespace QuanLyChungCu.View
             // 
             // cb_sua
             // 
-            this.cb_sua.BackColor = System.Drawing.Color.Plum;
+            this.cb_sua.BackColor = System.Drawing.Color.White;
+            this.cb_sua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_sua.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_sua.Enabled = false;
+            this.cb_sua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cb_sua.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_sua.ForeColor = System.Drawing.Color.Purple;
             this.cb_sua.FormattingEnabled = true;
@@ -276,7 +282,8 @@ namespace QuanLyChungCu.View
             // 
             // btn_them
             // 
-            this.btn_them.BackColor = System.Drawing.Color.Plum;
+            this.btn_them.BackColor = System.Drawing.Color.MistyRose;
+            this.btn_them.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_them.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_them.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_them.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -299,7 +306,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_them
             // 
-            this.txt_them.BackColor = System.Drawing.Color.Plum;
+            this.txt_them.BackColor = System.Drawing.Color.MistyRose;
             this.txt_them.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_them.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_them.ForeColor = System.Drawing.Color.Purple;
@@ -320,8 +327,10 @@ namespace QuanLyChungCu.View
             // 
             // cb_them
             // 
-            this.cb_them.BackColor = System.Drawing.Color.Plum;
+            this.cb_them.BackColor = System.Drawing.Color.White;
+            this.cb_them.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_them.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_them.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cb_them.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_them.ForeColor = System.Drawing.Color.Purple;
             this.cb_them.FormattingEnabled = true;
@@ -342,8 +351,10 @@ namespace QuanLyChungCu.View
             // 
             // cb_khu
             // 
-            this.cb_khu.BackColor = System.Drawing.Color.Plum;
+            this.cb_khu.BackColor = System.Drawing.Color.White;
+            this.cb_khu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_khu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_khu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cb_khu.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_khu.ForeColor = System.Drawing.Color.Purple;
             this.cb_khu.FormattingEnabled = true;
@@ -369,48 +380,48 @@ namespace QuanLyChungCu.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgV_canho.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgV_canho.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dgV_canho.BackgroundColor = System.Drawing.Color.Plum;
+            this.dgV_canho.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dgV_canho.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgV_canho.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgV_canho.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Plum;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgV_canho.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgV_canho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgV_canho.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgV_canho.DefaultCellStyle = dataGridViewCellStyle10;
             this.dgV_canho.EnableHeadersVisualStyles = false;
             this.dgV_canho.GridColor = System.Drawing.Color.Purple;
             this.dgV_canho.Location = new System.Drawing.Point(12, 152);
             this.dgV_canho.Name = "dgV_canho";
             this.dgV_canho.ReadOnly = true;
             this.dgV_canho.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgV_canho.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgV_canho.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgV_canho.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Purple;
-            this.dgV_canho.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Purple;
+            this.dgV_canho.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgV_canho.RowTemplate.Height = 24;
             this.dgV_canho.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgV_canho.Size = new System.Drawing.Size(475, 453);
@@ -428,6 +439,7 @@ namespace QuanLyChungCu.View
             // 
             // grb_vatdung
             // 
+            this.grb_vatdung.BackColor = System.Drawing.Color.MistyRose;
             this.grb_vatdung.Controls.Add(this.panel2);
             this.grb_vatdung.Controls.Add(this.groupBox2);
             this.grb_vatdung.Controls.Add(this.groupBox1);
@@ -453,7 +465,8 @@ namespace QuanLyChungCu.View
             // 
             // btn_xoavatdung
             // 
-            this.btn_xoavatdung.BackColor = System.Drawing.Color.Plum;
+            this.btn_xoavatdung.BackColor = System.Drawing.Color.MistyRose;
+            this.btn_xoavatdung.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_xoavatdung.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_xoavatdung.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_xoavatdung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -463,7 +476,7 @@ namespace QuanLyChungCu.View
             this.btn_xoavatdung.Size = new System.Drawing.Size(152, 106);
             this.btn_xoavatdung.TabIndex = 13;
             this.btn_xoavatdung.Text = "Xóa";
-            this.btn_xoavatdung.UseVisualStyleBackColor = true;
+            this.btn_xoavatdung.UseVisualStyleBackColor = false;
             this.btn_xoavatdung.Click += new System.EventHandler(this.btn_xoavatdung_Click);
             // 
             // groupBox2
@@ -489,8 +502,9 @@ namespace QuanLyChungCu.View
             // 
             // nUP_themsoluong
             // 
-            this.nUP_themsoluong.BackColor = System.Drawing.Color.Plum;
+            this.nUP_themsoluong.BackColor = System.Drawing.Color.MistyRose;
             this.nUP_themsoluong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nUP_themsoluong.Cursor = System.Windows.Forms.Cursors.Hand;
             this.nUP_themsoluong.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nUP_themsoluong.ForeColor = System.Drawing.Color.Purple;
             this.nUP_themsoluong.Location = new System.Drawing.Point(121, 104);
@@ -509,7 +523,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_themdongia
             // 
-            this.txt_themdongia.BackColor = System.Drawing.Color.Plum;
+            this.txt_themdongia.BackColor = System.Drawing.Color.MistyRose;
             this.txt_themdongia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_themdongia.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_themdongia.ForeColor = System.Drawing.Color.Purple;
@@ -530,7 +544,8 @@ namespace QuanLyChungCu.View
             // 
             // btn_themvatdung
             // 
-            this.btn_themvatdung.BackColor = System.Drawing.Color.Plum;
+            this.btn_themvatdung.BackColor = System.Drawing.Color.MistyRose;
+            this.btn_themvatdung.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_themvatdung.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_themvatdung.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_themvatdung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -553,11 +568,11 @@ namespace QuanLyChungCu.View
             // 
             // txt_themvatdung
             // 
-            this.txt_themvatdung.BackColor = System.Drawing.Color.Plum;
+            this.txt_themvatdung.BackColor = System.Drawing.Color.MistyRose;
             this.txt_themvatdung.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_themvatdung.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_themvatdung.ForeColor = System.Drawing.Color.Purple;
-            this.txt_themvatdung.Location = new System.Drawing.Point(137, 47);
+            this.txt_themvatdung.Location = new System.Drawing.Point(137, 41);
             this.txt_themvatdung.Name = "txt_themvatdung";
             this.txt_themvatdung.Size = new System.Drawing.Size(346, 33);
             this.txt_themvatdung.TabIndex = 6;
@@ -584,6 +599,7 @@ namespace QuanLyChungCu.View
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.nUP_suasoluong);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.txt_suadongia);
@@ -603,9 +619,22 @@ namespace QuanLyChungCu.View
             this.groupBox1.Text = "Sửa";
             this.groupBox1.UseCompatibleTextRendering = true;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.BackColor = System.Drawing.Color.MistyRose;
+            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown1.Enabled = false;
+            this.numericUpDown1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.ForeColor = System.Drawing.Color.Purple;
+            this.numericUpDown1.Location = new System.Drawing.Point(125, 103);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(45, 36);
+            this.numericUpDown1.TabIndex = 12;
+            this.numericUpDown1.TabStop = false;
+            // 
             // nUP_suasoluong
             // 
-            this.nUP_suasoluong.BackColor = System.Drawing.Color.Plum;
+            this.nUP_suasoluong.BackColor = System.Drawing.Color.MistyRose;
             this.nUP_suasoluong.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nUP_suasoluong.Enabled = false;
             this.nUP_suasoluong.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -626,7 +655,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_suadongia
             // 
-            this.txt_suadongia.BackColor = System.Drawing.Color.Plum;
+            this.txt_suadongia.BackColor = System.Drawing.Color.MistyRose;
             this.txt_suadongia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_suadongia.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_suadongia.ForeColor = System.Drawing.Color.Purple;
@@ -648,7 +677,8 @@ namespace QuanLyChungCu.View
             // 
             // btn_suavatdung
             // 
-            this.btn_suavatdung.BackColor = System.Drawing.Color.Plum;
+            this.btn_suavatdung.BackColor = System.Drawing.Color.MistyRose;
+            this.btn_suavatdung.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_suavatdung.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_suavatdung.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_suavatdung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -671,7 +701,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_suavatdung
             // 
-            this.txt_suavatdung.BackColor = System.Drawing.Color.Plum;
+            this.txt_suavatdung.BackColor = System.Drawing.Color.MistyRose;
             this.txt_suavatdung.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_suavatdung.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_suavatdung.ForeColor = System.Drawing.Color.Purple;
@@ -707,48 +737,48 @@ namespace QuanLyChungCu.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgV_vatdung.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgV_vatdung.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dgV_vatdung.BackgroundColor = System.Drawing.Color.Plum;
+            this.dgV_vatdung.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dgV_vatdung.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgV_vatdung.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgV_vatdung.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgV_vatdung.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgV_vatdung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgV_vatdung.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgV_vatdung.DefaultCellStyle = dataGridViewCellStyle14;
             this.dgV_vatdung.EnableHeadersVisualStyles = false;
             this.dgV_vatdung.GridColor = System.Drawing.Color.Purple;
             this.dgV_vatdung.Location = new System.Drawing.Point(6, 152);
             this.dgV_vatdung.Name = "dgV_vatdung";
             this.dgV_vatdung.ReadOnly = true;
             this.dgV_vatdung.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgV_vatdung.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgV_vatdung.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dgV_vatdung.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Fuchsia;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Purple;
-            this.dgV_vatdung.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Purple;
+            this.dgV_vatdung.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dgV_vatdung.RowTemplate.Height = 24;
             this.dgV_vatdung.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgV_vatdung.Size = new System.Drawing.Size(701, 453);
@@ -785,6 +815,7 @@ namespace QuanLyChungCu.View
             ((System.ComponentModel.ISupportInitialize)(this.nUP_themsoluong)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nUP_suasoluong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgV_vatdung)).EndInit();
             this.ResumeLayout(false);
@@ -841,5 +872,6 @@ namespace QuanLyChungCu.View
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button btn_xoavatdung;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }

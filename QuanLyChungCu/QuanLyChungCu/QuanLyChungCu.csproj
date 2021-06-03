@@ -223,6 +223,9 @@
     </Compile>
     <Compile Include="View\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\Dichvu\Form_ChiTietHoaDonDV.resx">
+      <DependentUpon>Form_ChiTietHoaDonDV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Dichvu\Form_ThemHoaDonDV.resx">
       <DependentUpon>Form_ThemHoaDonDV.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Chothue\Form_ChoThue.resx">
       <DependentUpon>Form_ChoThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dichvu\Form_ThongTinDichVu.resx">
+      <DependentUpon>Form_ThongTinDichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Giaodienchinh\Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
@@ -351,6 +357,11 @@
       <DependentUpon>CSDL.edmx</DependentUpon>
       <LastGenOutput>CSDL.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-service-50.png" />
+    <None Include="Resources\Why-to-Choose-Online-Service-Desk-Software-FB-Image.jpg" />
+    <None Include="Resources\kisspng-technical-support-customer-service-livechat-clip-a-support-team-5b50b2e926a7c9.61667384153201533715831.jpg" />
+    <None Include="Resources\kisspng-technical-support-customer-service-livechat-clip-a-support-team-5b50b2e926a7c9.6166738415320153371583.jpg" />
+    <None Include="Resources\icons8-bill-55.png" />
     <None Include="Resources\diagram.png" />
     <None Include="Resources\criminal-carrying-money-bag-at-his-back.png" />
     <None Include="Resources\money.png" />

@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\CSDL.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\PBL3Test\QuanLyChungCu\QuanLyChungCu\CSDL.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

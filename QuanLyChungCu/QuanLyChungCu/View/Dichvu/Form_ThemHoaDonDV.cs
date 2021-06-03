@@ -30,7 +30,6 @@ namespace QuanLyChungCu.View
         public void HienThiDSDichVuDaChon()
         {
             dgvDSDichVu.DataSource = HoadonBLL.Instance.HienThiDSDichVuDaChon(maHD);
-            dgvDSDichVu.Columns["madichvu"].Visible = false;
             TongTien();
         }
         void ThemHD()
@@ -82,11 +81,6 @@ namespace QuanLyChungCu.View
             btnThemDon.Visible = false;
             dgvDSDichVu.DataSource = HoadonBLL.Instance.HienThiDSDichVuDaChon(maHD);
             DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-            dgvDSDichVu.Columns.Add(btn);
-            btn.HeaderText = "       Xóa";
-            btn.Text = "X";
-            btn.Name = "btn";
-            btn.UseColumnTextForButtonValue = true;
         }
 
         void XuatPDF()
@@ -202,8 +196,9 @@ namespace QuanLyChungCu.View
 
         public void XoaDVKhoiHD()
         {
+            int index = dgvDSDichVu.CurrentCell.RowIndex;
             int mahd = Convert.ToInt32(txtMaHD.Text);
-            int madv = Convert.ToInt32(dgvDSDichVu.Rows[0].Cells["madichvu"].Value);
+            int madv = Convert.ToInt32(dgvDSDichVu.Rows[index].Cells["madichvu"].Value);
             HoadonBLL.Instance.XoaDichVuKhoiHD(mahd, madv);
             HienThiDSDichVuDaChon();
         }

@@ -28,8 +28,8 @@ namespace QuanLyChungCu
         public Nullable<System.DateTime> ngaylap { get; set; }
     
         public virtual canho canho { get; set; }
-        public virtual nhanvien nhanvien { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<chitiethoadon> chitiethoadons { get; set; }
+        public virtual nhanvien nhanvien { get; set; }
     }
 }

@@ -128,6 +128,7 @@ namespace QuanLyChungCu.View
             // 
             // grb_thongtintaikhoan
             // 
+            this.grb_thongtintaikhoan.BackColor = System.Drawing.Color.MistyRose;
             this.grb_thongtintaikhoan.Controls.Add(this.lb_matkhau);
             this.grb_thongtintaikhoan.Controls.Add(this.lb_ngaydangnhap);
             this.grb_thongtintaikhoan.Controls.Add(this.lb_tendangnhap);
@@ -224,7 +225,8 @@ namespace QuanLyChungCu.View
             // 
             // btn_huydoimatkhau
             // 
-            this.btn_huydoimatkhau.BackColor = System.Drawing.Color.Plum;
+            this.btn_huydoimatkhau.BackColor = System.Drawing.Color.MistyRose;
+            this.btn_huydoimatkhau.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_huydoimatkhau.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_huydoimatkhau.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_huydoimatkhau.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -234,12 +236,13 @@ namespace QuanLyChungCu.View
             this.btn_huydoimatkhau.Size = new System.Drawing.Size(181, 47);
             this.btn_huydoimatkhau.TabIndex = 19;
             this.btn_huydoimatkhau.Text = "Hủy";
-            this.btn_huydoimatkhau.UseVisualStyleBackColor = true;
+            this.btn_huydoimatkhau.UseVisualStyleBackColor = false;
             this.btn_huydoimatkhau.Click += new System.EventHandler(this.btn_huydoimatkhau_Click);
             // 
             // btn_doimatkhau
             // 
-            this.btn_doimatkhau.BackColor = System.Drawing.Color.Plum;
+            this.btn_doimatkhau.BackColor = System.Drawing.Color.MistyRose;
+            this.btn_doimatkhau.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_doimatkhau.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_doimatkhau.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_doimatkhau.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -249,7 +252,7 @@ namespace QuanLyChungCu.View
             this.btn_doimatkhau.Size = new System.Drawing.Size(181, 47);
             this.btn_doimatkhau.TabIndex = 17;
             this.btn_doimatkhau.Text = "Thay đổi";
-            this.btn_doimatkhau.UseVisualStyleBackColor = true;
+            this.btn_doimatkhau.UseVisualStyleBackColor = false;
             this.btn_doimatkhau.Click += new System.EventHandler(this.btn_doimatkhau_Click);
             // 
             // panel3
@@ -262,7 +265,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_xacnhan
             // 
-            this.txt_xacnhan.BackColor = System.Drawing.Color.Plum;
+            this.txt_xacnhan.BackColor = System.Drawing.Color.MistyRose;
             this.txt_xacnhan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_xacnhan.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_xacnhan.ForeColor = System.Drawing.Color.Purple;
@@ -282,7 +285,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_matkhaumoi
             // 
-            this.txt_matkhaumoi.BackColor = System.Drawing.Color.Plum;
+            this.txt_matkhaumoi.BackColor = System.Drawing.Color.MistyRose;
             this.txt_matkhaumoi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_matkhaumoi.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_matkhaumoi.ForeColor = System.Drawing.Color.Purple;
@@ -302,7 +305,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_matkhaucu
             // 
-            this.txt_matkhaucu.BackColor = System.Drawing.Color.Plum;
+            this.txt_matkhaucu.BackColor = System.Drawing.Color.MistyRose;
             this.txt_matkhaucu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_matkhaucu.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_matkhaucu.ForeColor = System.Drawing.Color.Purple;
@@ -404,6 +407,7 @@ namespace QuanLyChungCu.View
             // 
             // grb_thongtincanhan
             // 
+            this.grb_thongtincanhan.BackColor = System.Drawing.Color.MistyRose;
             this.grb_thongtincanhan.Controls.Add(this.dTP_ngaysinh);
             this.grb_thongtincanhan.Controls.Add(this.rdB_Nu);
             this.grb_thongtincanhan.Controls.Add(this.rdB_Nam);
@@ -501,7 +505,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_sdt
             // 
-            this.txt_sdt.BackColor = System.Drawing.Color.Plum;
+            this.txt_sdt.BackColor = System.Drawing.Color.MistyRose;
             this.txt_sdt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_sdt.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_sdt.ForeColor = System.Drawing.Color.Purple;
@@ -520,7 +524,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_cmnd
             // 
-            this.txt_cmnd.BackColor = System.Drawing.Color.Plum;
+            this.txt_cmnd.BackColor = System.Drawing.Color.MistyRose;
             this.txt_cmnd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_cmnd.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cmnd.ForeColor = System.Drawing.Color.Purple;
@@ -539,7 +543,7 @@ namespace QuanLyChungCu.View
             // 
             // txt_tennhanvien
             // 
-            this.txt_tennhanvien.BackColor = System.Drawing.Color.Plum;
+            this.txt_tennhanvien.BackColor = System.Drawing.Color.MistyRose;
             this.txt_tennhanvien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_tennhanvien.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tennhanvien.ForeColor = System.Drawing.Color.Purple;
@@ -571,6 +575,7 @@ namespace QuanLyChungCu.View
             // btn_huycapnhat
             // 
             this.btn_huycapnhat.BackColor = System.Drawing.Color.Plum;
+            this.btn_huycapnhat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_huycapnhat.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_huycapnhat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_huycapnhat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
@@ -595,6 +600,7 @@ namespace QuanLyChungCu.View
             // btn_capnhat
             // 
             this.btn_capnhat.BackColor = System.Drawing.Color.Plum;
+            this.btn_capnhat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_capnhat.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.btn_capnhat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
             this.btn_capnhat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
